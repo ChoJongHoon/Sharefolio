@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #5b8ffd;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  width: 90%;
+  height: 90%;
+  max-width: 500px;
+  max-height: 360px;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.loginBox {
+  background: #ffffff;
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.txtLogin {
+  margin: 10px 0px;
+  width: 90%;
+  height: 60px;
+  font-size: 24px;
+}
+
+.btnLogin {
+  width: 90%;
+  height: 60px;
+  font-size: 32px;
+  margin: 10px 0px;
+  background: #2f80ed;
+  color: #ffffff;
+  transition: background 0.3s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btnLogin:hover {
+  background: #56ccf2;
+}
+
+.btnSignUp {
+  width: 90%;
+  height: 60px;
+  font-size: 32px;
+  margin: 10px 0px;
+  background: #e0e0e0;
+  color: #000000;
+  transition: background 0.3s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btnSignUp:hover {
+  background: #f2f2f2;
+}
