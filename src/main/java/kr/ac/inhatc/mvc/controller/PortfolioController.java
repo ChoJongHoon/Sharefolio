@@ -1,6 +1,5 @@
 package kr.ac.inhatc.mvc.controller;
 
-import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,10 +26,5 @@ public class PortfolioController {
 	@RequestMapping("/")
 	public String index() {
 		return "portfolio";
-	}
-
-	@RequestMapping("/login")
-	public String login() {
-		return "login";
 	}
 }

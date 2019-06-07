@@ -8,12 +8,12 @@
 <link type="text/css" rel="stylesheet" href="resource/res/css/login.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
-	$(document).ready(function() {
+	/* $(document).ready(function() {
 		$(".btnLogin").click(function(){
 			window.sessionStorage.setItem("id",$("#txtId").val());
 			window.location.assign("/");
 		});
-	});
+	}); */
 	
 </script>
 </head>
@@ -21,8 +21,8 @@
     <div class="center">
       <div class="title">Sharefolio</div>
       <div class="loginBox">
-        <form action="/" method="post">
-          <input type="text" class="txtLogin" placeholder="ID" id="txtId" />
+        <form action="/login" method="post">
+          <input type="text" class="txtLogin" placeholder="ID" id="txtId" name="id" />
           <input type="password" class="txtLogin" placeholder="Password" />
           <Button class="btnLogin">Login</Button>
           <Button class="btnSignUp">Sign Up</Button>

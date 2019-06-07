@@ -12,8 +12,6 @@ import kr.ac.inhatc.mvc.mapper.PortfolioMapper;
 @Service
 public class PortfolioService {
 
-//	@Resource(name = "kr.ac.inhatc.mvc.mapper.Portfolio")
-//	PortfolioMapper portfolio;
 
 	 @Autowired
 	 PortfolioMapper portfolio;
