@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.inhatc.mvc.mapper.PortfolioMapper">
+	<select id="selectPortfolioList" parameterType="String" resultType="hashmap">
+		select title, content, tech, substring_index(img_url, ',', 1) as img_url
+		from portfolio
+		WHERE user_id = #{value}
+	</select>
+	
+</mapper>
