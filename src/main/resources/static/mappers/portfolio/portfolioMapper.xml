@@ -12,14 +12,14 @@
         VALUES (#{user_id}, #{title}, #{content}, #{tech}, #{img_url}, #{github_url})
     </insert>
 	<select id="selectPortfolioOne" parameterType="String" resultType="hashmap">
-		select users.user_name, title, content, tech, img_url , github_url
+		select users.user_name, portfolio_id, title, content, tech, img_url , github_url
 		from portfolio, users
 		where portfolio.user_id = users.user_id
 		and portfolio_id = #{value}
 	</select>
-	<!-- <update id="updatePortfolio"">
+	<update id="updatePortfolio">
 		update portfolio
-		set title=#{title}, content=#{content}, tech=#{tech}, img_url=#{img_url}, github_url=#{git_url}
-		where portfolio_id = #{no}
-	</update> -->
+		set title=#{title}, content=#{content}, tech=#{tech}, img_url=#{img_url}, github_url=#{github_url}
+		where portfolio_id = #{portfolio_id}
+	</update>
 </mapper>

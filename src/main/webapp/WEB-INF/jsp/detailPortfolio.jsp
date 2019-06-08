@@ -26,7 +26,7 @@
         <c:out value="${portfolio.title}" />
       </div>
       <div class="postHeaderButtons">
-        <button class="btnUpdate">수정</button>
+        <button class="btnUpdate" onclick="location.href='/updatePortfolio?no=${portfolio.portfolio_id}'">수정</button>
         <button class="btnDelete">삭제</button>
       </div>
       <br />

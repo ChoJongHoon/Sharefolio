@@ -71,11 +71,25 @@ public class PortfolioController {
 		return mv;
 	}
 	
-//	@RequestMapping("/updatePortfolio")
-//	public ModelAndView updatePortfolio(String no) throws Exception{
-//		ModelAndView mv = new ModelAndView();
-//		mv.addObject("portfolio", portfolioService.selectPortfolioOne(no));
-//		mv.setViewName("updatePortfolio");
-//		return mv;
-//	}
+	@RequestMapping("/updatePortfolio")
+	public ModelAndView updatePortfolio(String no) throws Exception{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("portfolio", portfolioService.selectPortfolioOne(no));
+		mv.setViewName("updatePortfolio");
+		return mv;
+	}
+	
+	@RequestMapping("/updatePortfolio.do")
+	public ModelAndView updatePortfolio(String portfolio_id, String title, String content, String tech, String img_url, String github_url, HttpServletRequest request, HttpServletResponse response) throws Exception{
+		HashMap<String, String> hashMap = new HashMap<String, String>();
+		hashMap.put("portfolio_id", portfolio_id);
+		hashMap.put("title", title);
+		hashMap.put("content", content);
+		hashMap.put("tech", tech);
+		hashMap.put("img_url", img_url);
+		hashMap.put("github_url", github_url);
+		portfolioService.updatePortfolio(hashMap);
+		response.sendRedirect("/portfolio");
+		return portfolio(request, response);
+	}
 }

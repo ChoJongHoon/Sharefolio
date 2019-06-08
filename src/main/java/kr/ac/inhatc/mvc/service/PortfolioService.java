@@ -27,4 +27,8 @@ public class PortfolioService {
 		return portfolio.selectPortfolioOne(no);
 	}
 
+	public int updatePortfolio(HashMap<String, String> map) throws Exception{
+		return portfolio.updatePortfolio(map);
+	}
+
 }
