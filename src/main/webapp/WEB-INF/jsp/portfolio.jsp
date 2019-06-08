@@ -19,7 +19,7 @@
 <body>
     <div class="header">
       <div class="title">Sharefolio</div>
-      <button class="btnNewPost">+ 새 글 작성</button>
+      <button class="btnNewPost" onclick="location.href='/newPortfolio'">+ 새 글 작성</button>
       <div class="tabs">
         <div class="tab tabSelect">내 포트폴리오</div>
         <div class="tab">공유 게시판</div>
@@ -28,7 +28,7 @@
     <h2 class="boardTitle">내 포트폴리오</h2>
 
     <c:forEach var="result" items="${portfolioList}" varStatus="status">
-    	<div class="cardPortfolio">
+    	<div class="cardPortfolio" onclick="location.href='/detailPortfolio.do?no=${result.portfolio_id}'">
 	      <div
 	        class="ptfCoverImg"
 	        style="background-image: url('<c:out value="${result.img_url}" />')"

@@ -1,5 +1,6 @@
 package kr.ac.inhatc.mvc.service;
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -11,13 +12,19 @@ import kr.ac.inhatc.mvc.mapper.PortfolioMapper;
 
 @Service
 public class PortfolioService {
-
-
-	 @Autowired
-	 PortfolioMapper portfolio;
-
+	@Autowired
+	PortfolioMapper portfolio;
+	 
 	public List<?> selectPortfolioList(String user_id) throws Exception {
 		return portfolio.selectPortfolioList(user_id);
+	}
+	
+	public int insertPortfolio(HashMap<String, String> map) throws Exception{
+		return portfolio.insertPortfolio(map);
+	}
+
+	public HashMap selectPortfolioOne(String no) throws Exception {
+		return portfolio.selectPortfolioOne(no);
 	}
 
 }

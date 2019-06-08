@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f3f5;
+  margin: 0px;
+}
+
+.header {
+  width: 100%;
+  padding-top: 4rem;
+  background: #ffffff;
+  margin-bottom: 2rem;
+  margin: 0;
+}
+
+.title {
+  position: absolute;
+  color: #212529;
+  left: 50%;
+  top: 1rem;
+  transform: translate(-50%);
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.postHeader {
+  background-color: #fcfaf9;
+  border-bottom: 1px solid #e5e4dd;
+  border-top: 1px solid #e5e4dd;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 30px 1rem;
+}
+
+.postHeaderHost {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.postHeaderTitle {
+  font-weight: 600;
+  display: inline-block;
+  color: #2f80ed;
+}
+
+.postHeaderButtons {
+  float: right;
+}
+
+.btnUpdate {
+  display: inline-block;
+  padding: 6px 15px;
+  font-size: 0.9rem;
+  color: #6b6b6b;
+  font-weight: 500;
+  border: 1px solid #aaaaaa;
+  border-radius: 16px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btnUpdate:hover {
+  background-color: #f5f5f5;
+}
+
+.btnDelete {
+  display: inline-block;
+  padding: 6px 15px;
+  font-size: 0.9rem;
+  color: #ed3356;
+  font-weight: 500;
+  border: 1px solid #ed3356;
+  border-radius: 16px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btnDelete:hover {
+  background-color: #fff4f6;
+}
+
+.postGitHub {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.postGitHub .fa-github {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.techStackWrapper {
+  margin: 1rem;
+}
+
+.tech {
+  display: inline-block;
+  padding: 3px 16px;
+  border: 1px solid #bbbbbb;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 6px 10px 0 0;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.postCard {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #dedede;
+  background-color: #fffcff;
+}
+
+.postCardTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.postCardContent {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.postCardDate {
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #e5e2e0;
+  padding: 3px 12px;
+  font-size: 0.8rem;
+  color: #333333;
+  font-weight: 600;
+}
+
+.postCardImages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.postCardImages li {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.postCardImage {
+  width: 120px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}

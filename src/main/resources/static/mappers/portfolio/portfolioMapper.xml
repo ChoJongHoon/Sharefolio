@@ -2,9 +2,24 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.ac.inhatc.mvc.mapper.PortfolioMapper">
 	<select id="selectPortfolioList" parameterType="String" resultType="hashmap">
-		select title, content, tech, substring_index(img_url, ',', 1) as img_url
+		select portfolio_id, title, content, tech, substring_index(img_url, ',', 1) as img_url
 		from portfolio
 		WHERE user_id = #{value}
+		order by portfolio_id desc
 	</select>
-	
+	<insert id="insertPortfolio">
+        INSERT INTO portfolio (user_id, title, content, tech, img_url, github_url)
+        VALUES (#{user_id}, #{title}, #{content}, #{tech}, #{img_url}, #{github_url})
+    </insert>
+	<select id="selectPortfolioOne" parameterType="String" resultType="hashmap">
+		select users.user_name, title, content, tech, img_url , github_url
+		from portfolio, users
+		where portfolio.user_id = users.user_id
+		and portfolio_id = #{value}
+	</select>
+	<!-- <update id="updatePortfolio"">
+		update portfolio
+		set title=#{title}, content=#{content}, tech=#{tech}, img_url=#{img_url}, github_url=#{git_url}
+		where portfolio_id = #{no}
+	</update> -->
 </mapper>

@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f3f5;
+  margin: 0px;
+}
+
+.header {
+  width: 100%;
+  padding-top: 4rem;
+  background: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.title {
+  position: absolute;
+  color: #212529;
+  left: 50%;
+  top: 1rem;
+  transform: translate(-50%);
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.newTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2f80ed;
+  margin: 1rem;
+}
+
+.inputWrapper {
+  border: 1px dotted #2f80ed;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.inputTitle {
+  float: left;
+  width: 100px;
+  font-size: 1.3rem;
+  padding: 0px;
+  text-align: center;
+  margin-top: 13px;
+  font-weight: 900;
+  color: #6d706f;
+}
+
+.inputContent {
+  border-left: 1px dashed #dddddd;
+  margin-left: 102px;
+  background-color: #ffffff;
+}
+
+.inputContent input {
+  width: 100%;
+  border: 0;
+  padding: 12px 14px;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+.inputContent textarea {
+  font-size: 1rem;
+  width: 100%;
+  border: 0;
+  padding: 12px 14px;
+  outline: none;
+}
+
+.options {
+  border: 1px solid #cccccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.option {
+  border-bottom: 1px solid #dddddd;
+}
+
+.optionSubject {
+  border-bottom: 1px solid #eeeeee;
+  background: #fafafa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.optionContent {
+  padding: 10px 15px;
+}
+
+.optionSubTitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.optionInputWrapper {
+  margin-top: 10px;
+}
+
+.optionInput {
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid #cccccc;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+}
+
+.tech {
+  display: inline-block;
+  padding: 3px 16px;
+  border: 1px solid #bbbbbb;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 6px 10px 0 0;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.image {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid #dddddd;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.btnCreate {
+  margin: 1rem;
+  display: block;
+  height: 3rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #2f80ed;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  float: right;
+}
+
+.btnCreate:hover {
+  background: #5b8ffd;
+  color: #ffffff;
+  -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.13);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  vertical-align: middle;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+p {
+  margin: 0px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.hashTag {
+  display: inline-block;
+  padding: 3px 16px;
+  border: 1px solid #bbbbbb;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 6px 10px 0 0;
+  cursor: pointer;
+  background: #ffffff;
+  text-decoration: underline;
+  color: #2f80ed;
+}
