@@ -12,4 +12,6 @@ public interface PortfolioMapper {
 	public HashMap selectPortfolioOne(String no) throws Exception;
 
 	public int updatePortfolio(HashMap<String, String> map) throws Exception;
+
+	public int deletePortfolio(String no) throws Exception;
 }

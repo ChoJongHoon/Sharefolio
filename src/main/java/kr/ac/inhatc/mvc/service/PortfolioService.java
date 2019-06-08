@@ -30,5 +30,9 @@ public class PortfolioService {
 	public int updatePortfolio(HashMap<String, String> map) throws Exception{
 		return portfolio.updatePortfolio(map);
 	}
+	
+	public int deletePortfolio(String no) throws Exception{
+		return portfolio.deletePortfolio(no);
+	}
 
 }

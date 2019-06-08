@@ -92,4 +92,11 @@ public class PortfolioController {
 		response.sendRedirect("/portfolio");
 		return portfolio(request, response);
 	}
+	
+	@RequestMapping("/deletePortfolio.do")
+	public ModelAndView deletePortfolio(String no, HttpServletRequest request, HttpServletResponse response) throws Exception{
+		portfolioService.deletePortfolio(no);
+		response.sendRedirect("/portfolio");
+		return portfolio(request, response);
+	}
 }

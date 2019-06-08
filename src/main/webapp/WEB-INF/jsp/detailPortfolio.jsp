@@ -27,7 +27,7 @@
       </div>
       <div class="postHeaderButtons">
         <button class="btnUpdate" onclick="location.href='/updatePortfolio?no=${portfolio.portfolio_id}'">수정</button>
-        <button class="btnDelete">삭제</button>
+        <button class="btnDelete" onclick="location.href='/deletePortfolio.do?no=${portfolio.portfolio_id}'">삭제</button>
       </div>
       <br />
       <div class="postGitHub">

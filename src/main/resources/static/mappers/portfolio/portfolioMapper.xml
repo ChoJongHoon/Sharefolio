@@ -22,4 +22,9 @@
 		set title=#{title}, content=#{content}, tech=#{tech}, img_url=#{img_url}, github_url=#{github_url}
 		where portfolio_id = #{portfolio_id}
 	</update>
+	<delete id="deletePortfolio">
+		delete
+		from portfolio
+		where portfolio_id = #{value}
+	</delete>
 </mapper>
