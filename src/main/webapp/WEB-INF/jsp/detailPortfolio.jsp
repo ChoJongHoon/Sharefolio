@@ -49,9 +49,6 @@
       <div class="postCardContent">
         <c:out value="${portfolio.content}" />
       </div>
-      <div class="postCardDate">
-        2019년 6월 2일
-      </div>
       <ul class="postCardImages">
       	<c:forEach var="item" items="${fn:split(portfolio.img_url, ',') }">
       		<li>

@@ -22,7 +22,7 @@
       <button class="btnNewPost" onclick="location.href='/newPortfolio'">+ 새 글 작성</button>
       <div class="tabs">
         <div class="tab tabSelect">내 포트폴리오</div>
-        <div class="tab">내 스케</div>
+        <div class="tab">내 스케줄</div>
         <div class="tab">공유 게시판</div>
       </div>
     </div>

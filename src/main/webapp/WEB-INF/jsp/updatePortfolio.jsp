@@ -46,7 +46,7 @@
 
 <form id="newPortfolioForm" method="POST" action="/updatePortfolio.do">
 <input type="text" name="portfolio_id" value="${portfolio.portfolio_id}" readonly style="display: none;" />
-    <h2 class="newTitle">포트폴리오 만들기</h2>
+    <h2 class="newTitle">포트폴리오 수정하기</h2>
     <div class="inputWrapper">
       <div class="inputTitle">*제목</div>
       <div class="inputContent">
